@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="tablehighlight.js"></script>
+	</head>
+	<body>
+	<div class="container" style="padding-top: 50px">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Username</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td>Paul</td>
+					<td>O'Conner</td>
+					<td>poconner@elevenfifty.org</td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>Kenn</td>
+					<td>Pascascio</td>
+					<td>kpascasio@elevenfifty.org</td>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td>James</td>
+					<td>Handshoe</td>
+					<td>jhandshoe@elevenfifty.org</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<br>
+	<br>
+<!-- Challenge Bronze - Make a basic table with the first and last names of some of your friends -->
+	<div class="container" style="padding-top: 50px">
+		<table class="table table-striped table-bordered table-hover">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>First Name</th>
+					<th>Last Name</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td>James</td>
+					<td>Winans</td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>Karma</td>
+					<td>Hamm</td>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td>Johnny</td>
+					<td>Mackel</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<br>
+	<br>
+<!-- Challenge Silver - Add contextual classes which make rows highlighted: added class "danger", "active", and "warning" -->
+	<div class="container" style="padding-top: 50px">
+		<table class="table table-striped table-bordered table-hover">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Name</th>
+					<th>Dog Type</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="danger">
+					<th scope="row">1</th>
+					<td>Luna</td>
+					<td>Labradoodle</td>
+				</tr>
+				<tr class="active">
+					<th scope="row">2</th>
+					<td>Levi</td>
+					<td>Pug</td>
+				</tr>
+				<tr class="warning">
+					<th scope="row">3</th>
+					<td>Morgan</td>
+					<td>Weimaraner</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<br>
+	<br>
+<!-- Challenge Gold	- make a table that highlights the row you are hovering over with your mouse -->
+	<div class="container" style="padding-top: 50px">
+		<table class="table table-striped table-bordered" onMouseOver="javascript:trackTableHighlight(event, '#8888FF');" 
+    onMouseOut="javascript:highlightTableRow(0);" ID="myTable">
+			<thead id="header">
+				<tr>
+					<th>#</th>
+					<th>Name</th>
+					<th>Cat Breed</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td>Galaxy</td>
+					<td>Maine Coon</td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>Lothlorien</td>
+					<td>Devon Rex</td>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td>Dwalin</td>
+					<td>Bambino</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<br>
+	<br>
+	<br>
+	</body>
+</html>
+
+
+
+
+
+
+
+
